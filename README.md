@@ -1,10 +1,10 @@
 # PowerDuo
 
-**PowerDuo** is a PowerShell module designed to **manage Duo Security via its API** [1, 2]. It functions as a **Duo Admin Module utilizing the Duo API** [2].
+**PowerDuo** is a PowerShell module designed to **manage Duo Security via its API** It functions as a **Duo Admin Module utilizing the Duo API**
 
 ## About the Project Name
 
-This project was originally named `PSDuo` [1]. However, the name was changed to `PowerDuo` just two days before its planned release on PSGallery, as another project had already used the `PSDuo` name [1]. You might still find some older names or help links that need updating within the module [1].
+This project was originally named `PSDuo`. However, the name was changed to `PowerDuo` just two days before its planned release on PSGallery, as another project had already used the `PSDuo` name. You might still find some older names or help links that need updating within the module.
 
 ## Features
 
@@ -12,19 +12,19 @@ The PowerDuo module allows you to interact with the Duo Security Admin API, prov
 
 Some key capabilities include:
 
-*   **Configuration Management**: Create, save, and load API configurations [4, 5].
-*   **User Management**: Get, add, set, and remove Duo users [3, 6].
-*   **Group Management**: Manage Duo groups and their members [6].
-*   **Device Management**: Interact with phones, tokens, WebAuthN credentials, and registered devices [6].
-*   **Administrator Management**: Manage Duo administrators, including setting, removing, and sending activation links [3, 6].
-*   **Logging and Reporting**: Retrieve Duo logs and reports [6].
-*   **Settings and Branding**: Get and set Duo settings, logos, and custom messaging [6].
+*   **Configuration Management**: Create, save, and load API configurations.
+*   **User Management**: Get, add, set, and remove Duo users.
+*   **Group Management**: Manage Duo groups and their members.
+*   **Device Management**: Interact with phones, tokens, WebAuthN credentials, and registered devices.
+*   **Administrator Management**: Manage Duo administrators, including setting, removing, and sending activation links.
+*   **Logging and Reporting**: Retrieve Duo logs and reports.
+*   **Settings and Branding**: Get and set Duo settings, logos, and custom messaging.
 
-**Note**: Duo assigns an ID for each object [3]. Some functions, such as `Set-DuoAdmin`, require this ID [3]. You can typically retrieve the ID using a `Get-Duo` function (e.g., `Get-DuoAdmin`) and then pipe or select the ID for use with `Set-DuoAdmin` [3].
+**Note**: Duo assigns an ID for each object. Some functions, such as `Set-DuoAdmin`, require this ID. You can typically retrieve the ID using a `Get-Duo` function (e.g., `Get-DuoAdmin`) and then pipe or select the ID for use with `Set-DuoAdmin`.
 
 ## Installation
 
-The PowerDuo module is available on the PowerShell Gallery [2]. It requires a **minimum PowerShell version of 4.0** [2].
+The PowerDuo module is available on the PowerShell Gallery [2]. It requires a **minimum PowerShell version of 4.0** 
 
 You can install it using one of the following methods:
 
