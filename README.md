@@ -8,7 +8,7 @@ This project was originally named `PSDuo`. However, the name was changed to `Pow
 
 ## Features
 
-The PowerDuo module allows you to interact with the Duo Security Admin API, providing a wide range of functions to manage various Duo objects. All functions within the module **follow the standard PowerShell format of Verb-Noun** (e.g., `Get-DuoUser`, `New-DuoUser`) [3].
+The PowerDuo module allows you to interact with the Duo Security Admin API, providing a wide range of functions to manage various Duo objects. All functions within the module **follow the standard PowerShell format of Verb-Noun** (e.g., `Get-DuoUser`, `New-DuoUser`).
 
 Some key capabilities include:
 
