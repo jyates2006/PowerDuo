@@ -24,7 +24,7 @@ Some key capabilities include:
 
 ## Installation
 
-The PowerDuo module is available on the PowerShell Gallery [2]. It requires a **minimum PowerShell version of 4.0** 
+The PowerDuo module is available on the PowerShell Gallery. It requires a **minimum PowerShell version of 4.0** 
 
 You can install it using one of the following methods:
 
