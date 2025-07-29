@@ -34,25 +34,32 @@ You can install it using one of the following methods:
 Install-Module -Name PowerDuo
 ```
 Install PSResource (Microsoft.PowerShell.PSResourceGet)
+```powershell
 Install-PSResource -Name PowerDuo
+```
 Azure Automation
 You can deploy this package directly to Azure Automation. Note that if the package has dependencies, all dependencies will also be deployed to Azure Automation.
 Manual Download
 You can manually download the .nupkg file to your system's default download location from the PowerShell Gallery. Please note that manually downloaded files are not unpacked and do not include dependencies.
 Getting Started & Configuration
 To use PowerDuo, you first need to protect an Admin API within Duo. You will require the Integration Key, Secret Key, and API hostname from your Duo admin panel. When protecting the Admin API, you might want to limit permissions and/or API network access depending on your purpose.
-Create a Configuration
+### Create a Configuration
 Begin by creating a configuration for your Duo API connection:
-New-DUOConfig -IntergrationKey SDFJASKLDFJASLKDJ -SecretKey ASDKLFJSMNVCIWJRFKSDMSMVNFNSKLF -apiHost api-###XXX###.duosecurity.com
+```powershell
+New-DUOConfig -IntegrationKey SDFJASKLDFJASLKDJ -SecretKey ASDKLFJSMNVCIWJRFKSDMSMVNFNSKLF -apiHost api-###XXX###.duosecurity.com
+```
 Save and Load Configuration (Optional)
 You can optionally save your configuration for easier use in later sessions or automation scripts:
-New-DUOConfig -IntergrationKey SDFJASKLDFJASLKDJ -SecretKey ASDKLFJSMNVCIWJRFKSDMSMVNFNSKLF -apiHost api-###XXX###.duosecurity.com -SaveConfig -Path C:\Duo\DuoConfig.clixml
-To load a saved configuration, which is particularly useful for automation scripting:
+```powershell
+New-DUOConfig -IntegrationKey SDFJASKLDFJASLKDJ -SecretKey ASDKLFJSMNVCIWJRFKSDMSMVNFNSKLF -apiHost api-###XXX###.duosecurity.com -SaveConfig -Path C:\Duo\DuoConfig.clixml
 Import-DuoConfig -Path C:\Duo\DuoConfig.clixml
-Add Duo Directory Keys
+```
+### Add Duo Directory Keys
 The Duo API does not support pulling directories and their names directly. However, the PowerDuo module provides an option to add directory keys to your configuration for later use.
 You can find the Directory Keys by navigating to your Duo admin panel and viewing your directories. Once inside a directory, the key will be visible in the URL (e.g., https://admin-ac#$#$.duosecurity.com/users/directorysync/ADFD56456456DFDS, where 'ADFD56456456DFDS' is the directory key). The name value you assign (-KeyName) is for your reference only and is irrelevant to the operation.
+```powershell
 Add-DuoDirectoryKeys -KeyName DuoDirectory -KeyValue 7908DDFD890
+```
 Dependencies
 This module has no dependencies.
 License
