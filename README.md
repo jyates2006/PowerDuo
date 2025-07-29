@@ -31,7 +31,8 @@ You can install it using one of the following methods:
 ### Install Module (PowerShellGet)
 
 ```powershell
-Install-Module -Name PowerDuo```
+Install-Module -Name PowerDuo
+```
 Install PSResource (Microsoft.PowerShell.PSResourceGet)
 Install-PSResource -Name PowerDuo
 Azure Automation
